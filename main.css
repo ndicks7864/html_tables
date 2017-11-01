@@ -1,0 +1,82 @@
+body {
+  font-family: sans-serif;
+  background-image: url("img/group_hudle_uconn.jpg")
+}
+
+h1 {
+color: #ffffff;
+text-align: center;
+font-size: 45px;
+border: solid #ffffff;
+border-radius: 10px;
+padding: 5px;
+margin-left: 60px;
+margin-right: 60px;
+}
+
+caption {
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+}
+
+table {
+margin-left: auto;
+margin-right: auto;
+border-collapse: collapse;
+}
+
+thead {
+font-weight: bold;
+}
+
+tr {
+color: #ffffff;
+font-size: 22px;
+}
+
+tr.player {
+  background-color: #aaaaaa;
+}
+
+th {
+  background-color: #0F2548;
+  color: #FEFEFE;
+  padding: 7px;
+}
+
+td {
+  padding: 7px;
+}
+
+@media (max-width: 600px) {
+h1 {
+  font-size: 30px;
+}
+  table {
+  padding-left: 7px;
+  padding-right: 7px;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    border: 1px solid #aaaaaa;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  td {
+    display: block;
+    text-align: right;
+  }
+
+  td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+}
